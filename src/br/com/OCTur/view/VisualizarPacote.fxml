@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" maxHeight="277.0" maxWidth="508.0" prefHeight="277.0" prefWidth="508.0" style="-fx-border-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OCTur.view.VisualizarPacoteController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="15.0" layoutY="66.0" spacing="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="66.0">
+         <children>
+            <ImageView fx:id="ivFoto" fitHeight="196.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="196.0" prefWidth="312.0">
+               <children>
+                  <Label fx:id="lbDescricao" text="Label" />
+                  <Label fx:id="lbPreco" text="Label">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbPrecoDividido" text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="lbCidade" layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="484.0" text="Label" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

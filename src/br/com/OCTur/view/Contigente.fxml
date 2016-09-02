@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OCTur.view.ContigenteController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="14.0" layoutY="21.0" text="categoria" />
+      <VBox layoutX="14.0" layoutY="38.0" prefHeight="125.0" prefWidth="200.0" spacing="10.0" style="-fx-border-color: black;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <RadioButton fx:id="rbAeroporto" mnemonicParsing="false" onAction="#carregarDados" selected="true" text="aeroportos">
+               <toggleGroup>
+                  <ToggleGroup fx:id="categoria" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbCompanhia" mnemonicParsing="false" onAction="#carregarDados" text="companhias" toggleGroup="$categoria" />
+            <RadioButton fx:id="rbAviao" mnemonicParsing="false" onAction="#carregarDados" text="avioes" toggleGroup="$categoria" />
+         </children>
+      </VBox>
+      <VBox layoutX="16.0" layoutY="200.0" prefHeight="125.0" prefWidth="200.0" spacing="10.0" style="-fx-border-color: black;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <RadioButton fx:id="rbTudo" mnemonicParsing="false" onAction="#carregarDados" selected="true" text="tudo">
+               <toggleGroup>
+                  <ToggleGroup fx:id="periodo" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbEspecifico" mnemonicParsing="false" onAction="#carregarDados" text="especifico" toggleGroup="$periodo" />
+            <Label text="inicio" />
+            <DatePicker fx:id="dpInicio" onAction="#carregarDados" />
+            <Label text="fim" />
+            <DatePicker fx:id="dpFim" onAction="#carregarDados" />
+         </children>
+      </VBox>
+      <Label layoutX="21.0" layoutY="183.0" text="periodo" />
+      <ScrollPane fx:id="spContainer" fitToHeight="true" fitToWidth="true" layoutX="226.0" layoutY="14.0" prefHeight="344.0" prefWidth="359.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Button layoutX="226.0" layoutY="355.0" mnemonicParsing="false" onAction="#btAnteriorActionEvent" text="&lt;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="226.0" />
+      <Button layoutX="560.0" layoutY="355.0" mnemonicParsing="false" onAction="#btProximoActionEvent" text="&gt;" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>

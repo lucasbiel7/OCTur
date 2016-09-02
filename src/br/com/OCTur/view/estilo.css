@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.error{
+    -fx-border-color: red;
+}
+.certo{
+    -fx-border-color: green;
+}

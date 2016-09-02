@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/octur?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">OC2016</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="br.com.OCTur.model.entity.Cidade"/>
+        <mapping class="br.com.OCTur.model.entity.Empresa"/>
+        <mapping class="br.com.OCTur.model.entity.Estado"/>
+        <mapping class="br.com.OCTur.model.entity.Idioma"/>
+        <mapping class="br.com.OCTur.model.entity.Pais"/>
+        <mapping class="br.com.OCTur.model.entity.Papel"/>
+        <mapping class="br.com.OCTur.model.entity.Permissao"/>
+        <mapping class="br.com.OCTur.model.entity.Pessoa"/>
+        <mapping class="br.com.OCTur.model.entity.TipoPermissao"/>
+        <mapping class="br.com.OCTur.model.entity.Traducao"/>
+        <mapping class="br.com.OCTur.model.entity.Aeroporto"/>
+        <mapping class="br.com.OCTur.model.entity.Aviao"/>
+        <mapping class="br.com.OCTur.model.entity.Companhia"/>
+        <mapping class="br.com.OCTur.model.entity.Passagem"/>
+        <mapping class="br.com.OCTur.model.entity.Trajeto"/>
+        <mapping class="br.com.OCTur.model.entity.Voo"/>
+        <mapping class="br.com.OCTur.model.entity.Hotel"/>
+        <mapping class="br.com.OCTur.model.entity.Orcamento"/>
+        <mapping class="br.com.OCTur.model.entity.Quarto"/>
+        <mapping class="br.com.OCTur.model.entity.Reserva"/>
+        <mapping class="br.com.OCTur.model.entity.TipoQuarto"/>
+        <mapping class="br.com.OCTur.model.entity.CategoriaProduto"/>
+        <mapping class="br.com.OCTur.model.entity.Compra"/>
+        <mapping class="br.com.OCTur.model.entity.CompraItem"/>
+        <mapping class="br.com.OCTur.model.entity.Fornecedor"/>
+        <mapping class="br.com.OCTur.model.entity.Item"/>
+        <mapping class="br.com.OCTur.model.entity.Produto"/>
+        <mapping class="br.com.OCTur.model.entity.CategoriaEvento"/>
+        <mapping class="br.com.OCTur.model.entity.Comentario"/>
+        <mapping class="br.com.OCTur.model.entity.Convite"/>
+        <mapping class="br.com.OCTur.model.entity.Evento"/>
+        <mapping class="br.com.OCTur.model.entity.Marcacao"/>
+        <mapping class="br.com.OCTur.model.entity.Pacote"/>
+    </session-factory>
+</hibernate-configuration>

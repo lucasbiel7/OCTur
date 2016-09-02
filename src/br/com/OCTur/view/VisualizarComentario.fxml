@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="175.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="br.com.OCTur.view.VisualizarComentarioController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Rating fx:id="raNota" disable="true" layoutX="194.0" layoutY="14.0" max="11" rating="1.0" AnchorPane.rightAnchor="15.0" />
+      <TextArea fx:id="taComentario" editable="false" layoutX="21.0" layoutY="77.0" prefHeight="86.0" prefWidth="570.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <ImageView fx:id="ivUsuario" fitHeight="52.0" fitWidth="53.0" layoutX="24.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" />
+      <Label fx:id="lbUsuario" layoutX="15.0" layoutY="60.0" />
+      <Label fx:id="lbData" layoutX="77.0" layoutY="6.0" />
+   </children>
+</AnchorPane>

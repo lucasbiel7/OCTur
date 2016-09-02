@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apPrincipal" prefHeight="469.0" prefWidth="863.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OCTur.view.PrincipalController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane fx:id="spContainer" layoutX="32.0" layoutY="118.0" prefHeight="267.0" prefWidth="570.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="118.0" />
+      <AnchorPane layoutX="15.0" layoutY="5.0" prefHeight="103.0" prefWidth="570.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <ImageView fx:id="ivFoto" fitHeight="108.0" fitWidth="109.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lbNome" layoutX="109.0" layoutY="6.0" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="lbUltimaAutenticacao" layoutX="109.0" layoutY="38.0" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="15.0" />
+            <Separator layoutX="116.0" layoutY="61.0" prefWidth="200.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="15.0" />
+            <HBox layoutX="116.0" layoutY="69.0" prefHeight="36.0" prefWidth="439.0" spacing="10.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btPacotesActionEvent" text="Pacotes" />
+                  <Button fx:id="btComprarPassagem" mnemonicParsing="false" onAction="#btComprarPassagemActionEvent" text="voos" />
+                  <Button mnemonicParsing="false" onAction="#btHotelActionEvent" text="hotel" />
+                  <Button fx:id="btComprarProdutos" mnemonicParsing="false" onAction="#btComprarProdutoActionEvent" text="artesanato" />
+                  <Button mnemonicParsing="false" onAction="#btBuscarEventoActionEvent" text="eventos" />
+                  <Button fx:id="btConfiguracao" onAction="#btConfiguracaoActionEvent" text="Configuracoes" />
+                  <Button mnemonicParsing="false" onAction="#btGerenciarPacotesActionEvent" text="GerenciarPacotes" />
+                  <Button fx:id="btSair" onAction="#btSairActionEvent" text="Sair" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
